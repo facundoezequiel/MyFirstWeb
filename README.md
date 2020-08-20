@@ -1,2 +1,2 @@
 # MyFirstWeb
- HTML Javascript Porject / Introducción a la programación multimedial 2017 - UMAI
+ HTML JavaScript Project / Introducción Programación Multimedial 2017 - UMAI
