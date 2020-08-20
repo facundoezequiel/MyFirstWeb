@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #21272b;
+}
+
+/* HEADER BEGIN */
+
+header {
+    width: 99.3%;
+    overflow: hidden;
+    padding: 0.7%;
+    background-color: #181c1f;
+    z-index: 99;
+    opacity: 0.95;
+    position: fixed;
+}
+
+header h1 {
+    padding-left: 22%;
+    float: left;
+}
+
+header h1 a {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    color: #FFD743;
+    font-size: 80%;
+    transition: 0.2s all;
+    text-decoration: none;
+    letter-spacing: 15px;
+}
+
+header h1 a:hover {
+    color: gray;
+}
+
+#botonesmenu {
+    display: none;
+}
+
+header nav {
+    padding-top: 0.5%;
+    float: right;
+    padding-right: 22%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    transition: 0.3s all;
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+}
+
+header nav ul li a::after {
+    position: absolute;
+    bottom: 9px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #FFD743;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(17px);
+}
+
+header nav ul li a:hover:after {
+    opacity: 1;
+    transform: translateY(15px)
+}
+
+header nav ul li {
+    padding-left: 20px;
+}
+
+/* //HEADER END */
+
+/* MAIN BEGIN */
+
+main h1 {
+    font-size: 190%;
+    color: #FFD743;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main p {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 6%;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 27px;
+    padding-top: 5%;
+}
+
+main div {
+    width: 56%;
+    margin: 0 auto;
+    padding-top: 7%;
+}
+
+main a {
+    transition: 0.2s all;
+    display: block;
+    background-color: transparent;
+    padding: 2.2%;
+    width: 16%;
+    text-decoration: none;
+    border: none;
+    color: #FFD743;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    border-width: thin;
+    border-style: solid;
+    border-color: #FFD743;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+main a:hover {
+    color: gray;
+    border-color: gray;
+}
+
+/* //MAIN END */
+
+/* RESPONSIVE BEGIN */
+
+@media screen and (max-width: 1898px) {
+
+    footer div {
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width: 1420px) {
+
+    header h1 {
+        padding-left: 8%;
+    }
+
+    header nav {
+        padding-top: 0.6%;
+        padding-right: 8%;
+    }
+
+    footer div {
+        width: 76%;
+    }
+}
+
+@media screen and (max-width: 898px) {
+
+    #botonesmenu {
+        display: block;
+    }
+
+    header nav {
+        padding-right: 0%;
+        float: left;
+        padding-left: 8%;
+    }
+
+    header h1 {
+        float: right;
+        padding-right: 8%;
+        padding-left: 0%;
+    }
+
+    header div a {
+        color: white;
+        font-size: 120%;
+    }
+
+    header nav ul li {
+        padding-left: 0px;
+        width: 100%;
+        display: block;
+        margin-bottom: 20%;
+        margin-top: 20%;
+    }
+
+    header nav ul li a {
+        font-size: 164%;
+    }
+
+    ul.nav-items {
+        overflow: hidden;
+        height: 0;
+    }
+
+    #navigation:target .nav-items {
+        height: 100%;
+        transition: 3s all;
+    }
+
+    .close {
+        display: none;
+    }
+
+    #navigation:target .open {
+        display: none;
+    }
+
+    #navigation:target .close {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+
+    footer div p {
+        font-size: 74%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        width: 97.3%;
+        padding: 2.7%;
+    }
+
+    header nav {
+        padding-left: 3%;
+    }
+
+    header nav div a {
+        font-size: 200%;
+    }
+
+    header h1 {
+        padding-right: 3%;
+        font-size: 245%;
+    }
+
+    footer div p {
+        display: none;
+    }
+
+    footer figure {
+        width: 87%;
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    header h1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    footer figure {
+        width: 90%;
+    }
+
+}
+
+/* //RESONSIVE END */

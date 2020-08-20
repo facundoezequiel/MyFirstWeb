@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>FB // CURRICULUM</title>
+
+    <!-- META & CSS LINKS -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="assets/css/styles5.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT AWESOME CSS LINK -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <!-- FAVICON LINK -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- FONT LINKS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,300,400,500,600,700,800,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER BEGIN -->
+    <header>
+
+        <h1><a href="home.html">FACUNDO</a></h1>
+        <nav id="navigation">
+            <div id="botonesmenu">
+                <a href="#navigation" class="open"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <ul class="nav-items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="trabajos.html">TRABAJOS</a></li>
+                <li><a href="equipo.html">EQUIPO</a></li>
+                <li><a id="pagactiva" href="curriculum.html">CURRICULUM</a></li>
+                <li><a href="index.html #contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- //HEADER END -->
+
+    <!-- MAIN BEGIN -->
+    <main>
+
+        <!-- SECTION TITULOPDF BEGIN -->
+        <section id="titulopdf">
+
+            <div>
+                <h1>CURRICULUM</h1>
+                <a href="assets/pdf/cv.pdf">PDF</a>
+            </div>
+
+        </section>
+        <!-- //SECTION TITULOPDF END -->
+
+        <!-- SECTION CV BEGIN -->
+        <section id="cv">
+
+            <div id="cv1">
+                <img id="sliderimg" src="assets/img/facundo.png">
+                <script>
+                    // SLIDER BEGIN
+
+                    // CREO LA VARIABLE CONTADOR.
+                    var contadorslider = 0;
+
+                    // CREO EL ARRAY CON LAS ARCHIVOS PARA LAS IMAGENES DEL SLIDER.
+                    var arrayimgslider = new Array("facundo.png", "facundo2.png", "facundo3.png");
+
+                    // LE AGREGO EL ATRIBUTO SRC A LA IMAGEN PARA PODER VER UNA DESDE QUE CARGA LA PAGINA, PONGO LA TERCERA IMAGEN PARA QUE LA PRIMERA NO SE REPITA AL PRINCIPIO.
+                    document.getElementById("sliderimg").setAttribute("src", "assets/img/facundo3.png");
+
+                    // CREO UN SETINTERVAL PARA QUE CADA 5 SEGUNDOS PASE ESTO.
+                    setInterval(function() {
+
+                        // QUE CONCATENE EL ATRIBUTO SRC PARA LA ETIQUETA IMAGEN CON LA POSICION DEL ARRAY.
+                        document.getElementById("sliderimg").setAttribute("src", "assets/img/" + arrayimgslider[contadorslider]);
+
+                        // QUE LE SUME UNO AL CONTADOR PARA QUE CAMBIE LA IMAGEN.
+                        contadorslider++;
+
+                        // QUE SI LLEGAN AL LIMITE VUELVAN A EMPEZAR.
+                        if (contadorslider == arrayimgslider.length) {
+                            contadorslider = 0;
+                        }
+
+                    }, 5000);
+
+                    // SLIDER END
+                </script>
+                <h1>FACUNDO <span>BRAHIM</span></h1>
+                <h4>TECNOLOG&Iacute;A MULTIMEDIAL</h4>
+            </div>
+            <div id="cv2">
+                <figure id="cv2f1">
+                    <article>
+                        <h4>CONTACTO</h4>
+                        <figure id="contacto">
+                            <p id="titulos">TELEFONO:<br>DIRECCION:<br>MAIL:<br>REDES:</p>
+                            <p id="datos">+54 11 60221818<br>Pujol 1435 6D<br>facubra99@hotmail.com<br>@facundobrahim</p>
+                        </figure>
+                    </article>
+                    <article>
+                        <h4>HABILIDADES</h4>
+                        <figure id="habilidades">
+                            <p id="adobe">Adobe Photoshop<br>Adobe Illustrator<br>Adobe InDesing<br>Adobe Muse<br>Adobe Premier</p>
+                            <p id="puntos">
+                                <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                <br>
+                                <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                <br>
+                                <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                <br>
+                                <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-thin" aria-hidden="true"></i><i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                <br< <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i>
+                            </p>
+                        </figure>
+                    </article>
+                    <article>
+                        <h4>EXTRAS</h4>
+                        <figure id="extras">
+                            <p id="iconos"><i class="fa fa-battery-full" aria-hidden="true"></i><br><i class="fa fa-bus" aria-hidden="true"></i><br><i class="fa fa-comments" aria-hidden="true"></i><br><i class="fa fa-users" aria-hidden="true"></i></p>
+                            <p id="iconostext">Lorem ipsum dolor sit<br>Lorem ipsum dolor sit<br>Lorem ipsum dolor sit<br>Lorem ipsum dolor sit</p>
+                        </figure>
+                    </article>
+                </figure>
+                <figure id="cv2f2">
+                    <article id="tituloyp">
+                        <h4>LOREM IPSUM</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </article>
+                    <article id="tenis">
+                        <h4>TENIS</h4>
+                        <figure>
+                            <h4>FERRO:</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h4>FERRO:</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h4>FERRO:</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </figure>
+                    </article>
+                </figure>
+            </div>
+
+        </section>
+        <!-- //SECTION CV END -->
+
+    </main>
+    <!-- //MAIN END -->
+
+    <!-- FOOTER BEGIN -->
+    <footer>
+
+        <div>
+            <p>Final de Programaci&oacute;n 2017 - Facundo Brahim</p>
+            <figure>
+                <a href="https://twitter.com/intent/tweet?text=Mira esta página! www.facundobrahim.com" data-size="large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facundobrahim.com%2F&amp;src=sdkpreparse"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </figure>
+        </div>
+
+    </footer>
+    <!-- // FOOTER END -->
+
+</body>
+
+</html>

@@ -1,0 +1,729 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #21272b;
+}
+
+/* HEADER BEGIN */
+
+header {
+    width: 99.3%;
+    overflow: hidden;
+    padding: 0.7%;
+    background-color: #181c1f;
+    z-index: 99;
+    opacity: 0.95;
+    position: fixed;
+}
+
+header h1 {
+    padding-left: 22%;
+    float: left;
+}
+
+header h1 a {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    color: #FFD743;
+    font-size: 80%;
+    transition: 0.2s all;
+    text-decoration: none;
+    letter-spacing: 15px;
+}
+
+header h1 a:hover {
+    color: gray;
+}
+
+#botonesmenu {
+    display: none;
+}
+
+header nav {
+    padding-top: 0.5%;
+    float: right;
+    padding-right: 22%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    transition: 0.3s all;
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+}
+
+header nav ul li a::after {
+    position: absolute;
+    bottom: 9px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #FFD743;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(17px);
+}
+
+header nav ul li a:hover:after {
+    opacity: 1;
+    transform: translateY(15px)
+}
+
+header nav ul li {
+    padding-left: 20px;
+}
+
+#pagactiva:after {
+    position: absolute;
+    bottom: 9px;
+    left: 0px;
+    width: 100%;
+    background-color: #FFD743;
+    content: "";
+    opacity: 1;
+    transform: translateY(15px);
+}
+
+/* //HEADER END */
+
+/* MAIN BEGIN */
+
+/* SECTION TITULOPDF BEGIN */
+
+#titulopdf h1 {
+    font-size: 190%;
+    color: #FFD743;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    float: left;
+}
+
+#titulopdf div {
+    width: 56vw;
+    margin: 0 auto;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+#titulopdf a {
+    transition: 0.2s all;
+    display: block;
+    background-color: transparent;
+    padding: 1.2%;
+    width: 6%;
+    text-decoration: none;
+    border: none;
+    color: #FFD743;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    border-width: thin;
+    border-style: solid;
+    border-color: #FFD743;
+    float: right;
+}
+
+#titulopdf a:hover {
+    color: gray;
+    border-color: gray;
+}
+
+/* //SECTION TITULOPDF END */
+
+/* SECTION CV BEGIN */
+
+#cv1 {
+    padding-bottom: 8%;
+    margin: 0 auto;
+    background-color: #1a1e20;
+    width: 56vw;
+}
+
+#cv1 img {
+    padding: 7%;
+    border-radius: 100%;
+    display: block;
+    width: 23%;
+    float: left;
+    transition: 0.2s all;
+}
+
+#cv1 img:hover {
+    transform: scale(1.05);
+}
+
+#cv1 h1 {
+    font-weight: 100;
+    font-size: 280%;
+    letter-spacing: 15px;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding-top: 14%;
+    font-size: 3em;
+}
+
+#cv1 h1 span {
+    font-weight: 300;
+}
+
+#cv1 h4 {
+    padding-top: 0.9%;
+    font-weight: 300;
+    letter-spacing: 7px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+#cv2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 48vw;
+    margin: 0 auto;
+    background-color: #1a1e20;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+#cv2f1 {
+    width: 31%;
+    padding-right: 4%;
+}
+
+#cv2f2 {
+    width: 65%;
+}
+
+#cv2f1 h4 {
+    color: #FFD743;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-size: 120%;
+    padding-bottom: 20%;
+}
+
+#cv2f1 article {
+    margin-top: 49%;
+}
+
+#cv2f1 p {
+    font-weight: 300;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-size: 85%;
+}
+
+#contacto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titulos {
+    width: 31%;
+    padding-right: 2%;
+}
+
+#datos {
+    width: 67%;
+    text-align: right;
+}
+
+#habilidades {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#adobe {
+    width: 55%;
+    padding-right: 20%;
+}
+
+#puntos {
+    width: 25%;
+}
+
+#extras {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#iconos {
+    width: 10%;
+    padding-right: 29%;
+}
+
+#iconostext {
+    width: 61%;
+}
+
+#cv2f2 {
+    padding-top: 6%;
+}
+
+#tituloyp h4 {
+    color: #FFD743;
+    text-align: left;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-size: 120%;
+    padding-bottom: 10%;
+}
+
+#tituloyp p {
+    font-weight: 300;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-size: 85%;
+    text-align: justify;
+}
+
+#tenis h4 {
+    color: #FFD743;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-size: 120%;
+    padding-top: 6%;
+}
+
+#tenis figure h4 {
+    color: #FFD743;
+    text-align: left;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-size: 120%;
+    padding-top: 10%;
+}
+
+#tenis figure p {
+    font-weight: 300;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-size: 85%;
+    text-align: justify;
+}
+
+/* //SECTION CV END */
+
+/* //MAIN END */
+
+/* FOOTER BEGIN */
+
+footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #1a1e20;
+    overflow: hidden;
+}
+
+footer p {
+    float: left;
+    color: gray;
+    letter-spacing: 1px;
+    padding-top: 1%;
+}
+
+footer div {
+    width: 56%;
+    margin: 0 auto;
+}
+
+footer figure {
+    float: right;
+    width: 8%;
+}
+
+
+footer a {
+    color: grey;
+    transition: 0.2s all;
+    padding-left: 2%;
+    font-size: 180%;
+    padding-left: 21%;
+    display: inline;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* //FOOTER END */
+
+/* RESPONSIVE BEGIN */
+
+@media screen and (max-width: 1898px) {
+
+    main figure nav {
+        width: 15%;
+    }
+
+    footer div {
+        width: 65%;
+    }
+
+    #cv2f1 p {
+        font-size: 72%;
+    }
+}
+
+@media screen and (max-width: 1684px) {
+
+    #cv2 {
+        width: 60vw;
+    }
+
+    #cv1 {
+        width: 68vw;
+    }
+
+    footer div {
+        width: 65%;
+    }
+
+    footer figure {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    #cv1 {
+        width: 90vw;
+        overflow: hidden;
+        padding-bottom: 0%;
+    }
+
+    #cv2 {
+        width: 82vw;
+    }
+
+    #titulopdf div {
+        width: 90vw;
+    }
+
+    header h1 {
+        padding-left: 8%;
+    }
+
+    header nav {
+        padding-top: 0.6%;
+        padding-right: 8%;
+    }
+
+    footer div {
+        width: 83%;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    header h1 a {
+        font-size: 65%;
+    }
+
+    header nav {
+        padding-right: 9%;
+    }
+
+    header nav ul li a {
+        font-size: 85%;
+    }
+
+    footer div p {
+        font-size: 85%;
+    }
+
+    footer figure a {
+        font-size: 135%;
+    }
+}
+
+@media screen and (max-width: 1012px) {
+
+    #titulopdf h1 {
+        font-size: 136%;
+    }
+
+    #titulopdf a {
+        padding: 0.9%;
+        font-size: 58%;
+    }
+
+    #cv1 h1 {
+        font-size: 2.2em;
+    }
+
+    #tituloyp p {
+        line-height: 22px;
+        font-size: 74%;
+    }
+
+    #tenis figure p {
+        line-height: 22px;
+        font-size: 74%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    #cv2f2 {
+        width: 58%;
+    }
+
+    #cv2f1 {
+        width: 38%;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+
+    #cv1 h1 {
+        font-size: 1.6em;
+    }
+
+    #cv1 h4 {
+        font-size: 0.8em;
+    }
+
+    @media screen and (max-width: 830px) {
+
+        #botonesmenu {
+            display: block;
+        }
+
+        header nav {
+            padding-right: 0%;
+            float: left;
+            padding-left: 8%;
+        }
+
+        header h1 {
+            float: right;
+            padding-right: 8%;
+            padding-left: 0%;
+        }
+
+        header div a {
+            color: white;
+            font-size: 120%;
+        }
+
+        header nav ul li {
+            padding-left: 0px;
+            width: 100%;
+            display: block;
+            margin-bottom: 20%;
+            margin-top: 20%;
+        }
+
+        header nav ul li a {
+            font-size: 164%;
+        }
+
+        ul.nav-items {
+            overflow: hidden;
+            height: 0;
+        }
+
+        #navigation:target .nav-items {
+            height: 100%;
+            transition: 3s all;
+        }
+
+        .close {
+            display: none;
+        }
+
+        #navigation:target .open {
+            display: none;
+        }
+
+        #navigation:target .close {
+            display: block;
+        }
+
+    }
+
+    @media screen and (max-width: 800px) {
+
+        #cv2f2 {
+            width: 53%;
+        }
+
+        #cv2f1 {
+            width: 44%;
+            padding-right: 3%;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        header {
+            width: 97.3%;
+            padding: 2.7%;
+        }
+
+        header nav {
+            padding-left: 3%;
+        }
+
+        header nav div a {
+            font-size: 200%;
+        }
+
+        header h1 {
+            padding-right: 3%;
+            font-size: 245%;
+        }
+
+        #titulopdf div {
+            padding-top: 20%;
+            padding-bottom: 14%;
+        }
+
+        #titulopdf a {
+            padding: 2.9%;
+        }
+
+        #cv1 {
+            display: none;
+        }
+
+        #cv2f1 {
+            width: 100%;
+            padding-right: 0%;
+        }
+
+        #cv2f1 article {
+            margin-top: 12%;
+        }
+
+        #cv2f1 h4 {
+            padding-bottom: 7%;
+        }
+
+        #cv2f1 p {
+            font-size: 128%;
+        }
+
+        #cv2f2 {
+            width: 100%;
+        }
+
+        footer div {
+            width: 92%;
+        }
+
+        footer figure {
+            width: 15%;
+        }
+    }
+
+
+    @media screen and (max-width: 425px) {
+
+        footer div p {
+            font-size: 70%;
+        }
+
+        footer figure {
+            width: 17%;
+        }
+
+        #cv2f1 p {
+            font-size: 111%;
+        }
+
+    }
+
+    @media screen and (max-width: 375px) {
+
+        header h1 a {
+            font-size: 53%;
+        }
+
+        footer div p {
+            font-size: 65%;
+        }
+
+        footer figure {
+            width: 19%;
+        }
+
+        #cv2f1 p {
+            font-size: 95%;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+
+        header h1 {
+            display: none;
+        }
+
+        footer p {
+            display: none;
+        }
+
+        footer figure {
+            width: 22%;
+            padding-right: 41%;
+        }
+
+        #cv2f1 p {
+            font-size: 77%;
+        }
+
+        #titulopdf a {
+            padding: 2.9%;
+            width: 18%;
+        }
+
+        #titulopdf div {
+            padding-top: 24%;
+            padding-bottom: 14%;
+        }
+    }
+
+    /* //RESONSIVE END */

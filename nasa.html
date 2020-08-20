@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>FB // NASA</title>
+
+    <!-- META & CSS LINKS -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="assets/css/styles2.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT AWESOME CSS LINK -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <!-- FAVICON LINK -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- FONT LINKS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,300,400,500,600,700,800,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER BEGIN -->
+    <header>
+
+        <h1><a href="home.html">FACUNDO</a></h1>
+        <nav id="navigation">
+            <div id="botonesmenu">
+                <a href="#navigation" class="open"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <ul class="nav-items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a id="pagactiva" href="trabajos.html">TRABAJOS</a></li>
+                <li><a href="equipo.html">EQUIPO</a></li>
+                <li><a href="curriculum.html">CURRICULUM</a></li>
+                <li><a href="index.html #contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- //HEADER END -->
+
+    <!-- MAIN BEGIN -->
+    <main>
+
+        <!-- SECTION FILTRO BEGIN -->
+        <section id="filtro">
+
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="trabajos.html">TODO</a></li>
+                        <li><a href="spacex.html">SPACE X</a></li>
+                        <li><a id="filtroactivo" href="nasa.html">NASA</a></li>
+                        <li><a href="pockocmoc.html">POCKOCMOC</a></li>
+                        <li><a href="conae.html">CONAE</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+        <!-- //SECTION FILTRO END -->
+
+        <!-- SECTION TRABAJOS BEGIN -->
+        <section id="trabajos">
+
+            <script src="assets/js/trabajo.js"></script>
+            <script>
+                // RECORRO LOS ARRAYS CON UN FOR MODIFICANDO DE QUE POSICION A QUE OTRA VA A RECORRER DEPENDIENDO DE LO QUE QUIERA MOSTRAR.
+                for (var contador = 10; contador < 20; contador++) {
+                    // CONCATENO USANDO HTML DINAMICO, CREANDO UN DIV PARA CADA TRABAJO, CON SU RESPECTIVA IMAGEN, TITULO Y DESCRIPCION SACANDO LAS COSAS DE LOS ARRAYS.
+                    document.write('<div><figure><img src="assets/img/trabajos1/' + arrayimgtrabajos[contador] + '.jpg" id="imagen1"><img src="assets/img/trabajos2/' + arrayimgtrabajos2[contador] + '.jpg" id="imagen2"></figure><figure><nav><ul class="fa-ul"><li><a href="https://www.facebook.com/facundo.brahim.96"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li><li><a href="https://www.twitter.com/"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li></ul></nav><h1>' + arrayh1trabajos[contador] + '</h1><p>' + arrayptrabajos[contador] + '</p></figure></div>');
+                }
+            </script>
+
+        </section>
+        <!-- //SECTION TRABAJOS END -->
+
+    </main>
+    <!-- //MAIN END -->
+
+    <!-- FOOTER BEGIN -->
+    <footer>
+
+        <div>
+            <p>Final de Programaci&oacute;n 2017 - Facundo Brahim</p>
+            <figure>
+                <a href="https://twitter.com/intent/tweet?text=Mira esta página! www.facundobrahim.com" data-size="large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facundobrahim.com%2F&amp;src=sdkpreparse"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </figure>
+        </div>
+
+    </footer>
+    <!-- // FOOTER END -->
+
+</body>
+
+</html>
